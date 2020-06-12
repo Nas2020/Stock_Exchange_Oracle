@@ -16,14 +16,14 @@ Smart Contract Interface to Oracle to access offchain data as part of BCDV1011 L
 
 
 
-## :Resources and References:
+## Resources and References:
 
-* [Solidity](https://solidity.readthedocs.io/).
-* [Truffle](https://www.trufflesuite.com/).
-* [React](https://reactjs.org/).
-* [Web3.js](https://web3js.readthedocs.io/).
+* [Solidity](https://solidity.readthedocs.io/)
+* [Truffle](https://www.trufflesuite.com/)
+* [React](https://reactjs.org/)
+* [Web3.js](https://web3js.readthedocs.io/)
 
-## :Credit
+## Credit
 
 * Professor Dave @ George Brown College.
 * Profeesor Dhruvin @ George Brown College.
