@@ -3,13 +3,13 @@ Smart Contract Interface to Oracle to access offchain data as part of BCDV1011 L
 
 ## Result Demo
 
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+![Demo](https://media.giphy.com/media/MDgLfACZjjtfIT9DPP/giphy.gif)
 
 ## Procedure
 
 `truffle develop`
 `migrate --reset`
-### User second terminal 
+#### User second terminal 
 `npm install`
 `npm start`
 
