@@ -17,19 +17,19 @@ handleClick = e => {
     e.preventDefault();
     const web3 = new Web3();
     const { symbol } = this.state;
-    const Storage = this.props.drizzle.contracts.Storage;
-    const dataKey = Storage.methods['getStockPrice'].cacheCall(web3.utils.fromAscii(symbol));
+    const StockOracle = this.props.drizzle.contracts.StockOracle;
+    const dataKey = StockOracle.methods['getStockPrice'].cacheCall(web3.utils.fromAscii(symbol));
     this.setState({dataKey});
-    const dataKey2 = Storage.methods['getStockVolume'].cacheCall(web3.utils.fromAscii(symbol));
+    const dataKey2 = StockOracle.methods['getStockVolume'].cacheCall(web3.utils.fromAscii(symbol));
     this.setState({dataKey2});
 }
 
 render() {
-    const { Storage } = this.props.drizzleState.contracts;
+    const { StockOracle } = this.props.drizzleState.contracts;
     const { dataKey } = this.state;
     const { dataKey2 } = this.state;
-    const price = Storage.getStockPrice[dataKey];
-    const volume = Storage.getStockVolume[dataKey2];
+    const price = StockOracle.getStockPrice[dataKey];
+    const volume = StockOracle.getStockVolume[dataKey2];
     return (
         <div>
 

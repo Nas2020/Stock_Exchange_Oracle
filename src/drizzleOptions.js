@@ -1,6 +1,6 @@
-import Storage from './contracts/Storage.json';
+import StockOracle from './contracts/StockOracle.json';
 const options = {
-    contracts: [Storage],
+    contracts: [StockOracle],
     web3: {
         fallback: {
             type: "ws",

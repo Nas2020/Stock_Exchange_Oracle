@@ -16,7 +16,7 @@ const Container = () => (
                 <div style = 
     {{width : '70%'}, {padding: '10%'}}>
                  
-                 <Balance drizzleState={drizzleState} index={0}/>
+                 <Balance drizzleState={drizzleState} index={0} drizzle={drizzle}/>
                  <WriteData drizzleState = {drizzleState} drizzle={drizzle} />
                  <ReadData drizzleState={drizzleState} drizzle={drizzle} />
                  

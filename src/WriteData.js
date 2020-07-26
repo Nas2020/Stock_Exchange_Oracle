@@ -31,8 +31,8 @@ class WriteData extends Component {
                 console.log("fetch failed", err)
             }
             
-            const Storage = drizzle.contracts.Storage;
-            const txId = await Storage
+            const StockOracle = drizzle.contracts.StockOracle;
+            const txId = await StockOracle
                 .methods['setStock']
                 .cacheSend(
                     web3.utils.fromAscii(symbol), this.state.price*10000, this.state.volume,
